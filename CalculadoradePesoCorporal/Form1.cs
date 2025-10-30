@@ -11,8 +11,13 @@ namespace CalculadoradePesoCorporal
         {
             string textoPeso = txtPeso.Text;
             double peso = Double.Parse(textoPeso); // Peso en kilogramos
+
             string textoAltura = txtAltura.Text;
-            double Altura = Double.Parse(textoAltura); //Altura en metros
+            double altura = Double.Parse(textoAltura); //Altura en metros
+
+            double imc = peso / (altura * altura);
+
+            MessageBox.Show("El IMC es: " + imc);
         }
     }
 }
