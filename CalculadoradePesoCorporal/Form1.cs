@@ -6,5 +6,13 @@ namespace CalculadoradePesoCorporal
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            string textoPeso = txtPeso.Text;
+            double peso = Double.Parse(textoPeso); // Peso en kilogramos
+            string textoAltura = txtAltura.Text;
+            double Altura = Double.Parse(textoAltura); //Altura en metros
+        }
     }
 }
